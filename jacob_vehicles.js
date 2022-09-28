@@ -46,6 +46,7 @@ function processJacobsvehicles(){
       ctx.restore();
       vehiclesindex.forEach((e) => {
         if(e.distance <= 10){
+          canvas.fillStyle = "Black";
           i=2
           while(i>0){
             i=i**2;
