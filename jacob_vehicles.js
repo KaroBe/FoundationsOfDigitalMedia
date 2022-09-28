@@ -14,7 +14,7 @@ function createvehiclesJacob(){
     }
     vehicles.push(vehiclej)
 }
-
+createvehiclesJacob();
 
 
 function processJacobsvehicles(){
