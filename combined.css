@@ -1,0 +1,47 @@
+:root {
+    --headerHeight: 47px;
+}
+
+h1 {
+    font-family: Georgia, serif;
+    font-size: 1.3em;
+    color: rgb(255, 255, 255);
+  }
+
+#nav{
+    font-family: Georgia, serif;
+    font-size: 1.3em;
+    color: rgb(255, 255, 255);
+}
+
+#header{
+    background-color: rgb(184, 169, 234);
+    height: var(--headerHeight);
+    position: absolute;
+    inset: 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* #nav{
+    background-color: Brown;
+    position:absolute;
+    width: var(--navWidth);
+    left:0px;
+    top:0px;
+    bottom:0px;
+} */
+
+/* Content div is centered in parent with 20px margin */
+#content{
+    background-color: rgb(229, 241, 255);
+    position:absolute; 
+    inset: 10px;
+}
+
+#parent{
+    margin-top: var(--headerHeight);
+    background-color: rgb(229, 241, 255);
+    position:absolute; 
+    inset: 0px;
+}
