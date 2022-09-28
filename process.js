@@ -1,4 +1,3 @@
-
 // ~~ Functions ~~
 
 function drawVehicle(v){
@@ -24,7 +23,7 @@ function animate(){
     // Reset canvas and draw pointer
     clear();
 
-    // Process vehicles
+    // Call your process...Vehicles function here
     processKarolinesVehicles();
 
     // Initiate next frame
