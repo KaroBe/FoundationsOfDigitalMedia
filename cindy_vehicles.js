@@ -1,7 +1,6 @@
 function createvehiclesCindy() {
-    for (let i = 0; i < 1; i++) {
-      let vehicle = {
-        position: [Math.random() * 500, Math.random() * 200],
+    let vehicleCindy = {
+        position: [200, 200],
         velocity: [2, 2],
         size: 50,
         direction: 0,
@@ -11,14 +10,12 @@ function createvehiclesCindy() {
         owner: "Cindy",
         colour: "purple",
         history: []
-      };
-      vehicles.push(vehicleCindy);
+      }
+      vehicles.push(vehicleCindy)
     }
-  }
   createvehiclesCindy();
   
   function processCindysvehicles() {
-    
     for (let vehicle of vehicles) {
       if (vehicle.owner == "Cindy") {
         if (vehicle.position[1] <= 0) {
@@ -35,7 +32,7 @@ function createvehiclesCindy() {
           vehicle.direction = vehicle.direction * -1;
         }
   
-        for (let othervehicle of vehicles) {
+        /*for (let othervehicle of vehicles) {
           if (vehicle.owner != "Cindy") {
             if (
               vehicle.position[0] >= othervehicle.position[0] - 10 &&
@@ -47,7 +44,7 @@ function createvehiclesCindy() {
               vehicle.direction = vehicle.direction * -1;
             }
           }
-        }
+        }*/
   
         //if (vehicle.owner != "Cindy") {
         //collision();
