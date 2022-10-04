@@ -39,8 +39,14 @@ function processJacobsvehicles(){
         ctx.fillStyle = ctx.fillStyle = 'hsl(' + 360 * Math.random() + ', 50%, 50%)';
         ctx.beginPath();
         ctx.moveTo(0, 0);
-        ctx.lineTo(-1.15, 2);
-        ctx.lineTo(1.15, 2);
+        ctx.lineTo((Math.random()*4)-2, (Math.random()*4)-2);
+        ctx.lineTo((Math.random()*4)-2, (Math.random()*4)-2);
+        ctx.lineTo((Math.random()*4)-2, (Math.random()*4)-2);
+        ctx.lineTo((Math.random()*4)-2, (Math.random()*4)-2);
+        ctx.lineTo((Math.random()*4)-2, (Math.random()*4)-2);
+        ctx.lineTo((Math.random()*4)-2, (Math.random()*4)-2);
+        ctx.lineTo((Math.random()*4)-2, (Math.random()*4)-2);
+        ctx.lineTo((Math.random()*4)-2, (Math.random()*4)-2);
         ctx.fill();
       }
       ctx.restore();
