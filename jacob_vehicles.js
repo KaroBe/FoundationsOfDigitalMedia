@@ -38,15 +38,15 @@ function processJacobsvehicles(){
         ctx.scale(vehicle.size, vehicle.size);
         ctx.fillStyle = ctx.fillStyle = 'hsl(' + 360 * Math.random() + ', 50%, 50%)';
         ctx.beginPath();
-        ctx.moveTo(0, 0);
-        ctx.lineTo((Math.random()*4)-2, (Math.random()*4)-2);
-        ctx.lineTo((Math.random()*4)-2, (Math.random()*4)-2);
-        ctx.lineTo((Math.random()*4)-2, (Math.random()*4)-2);
-        ctx.lineTo((Math.random()*4)-2, (Math.random()*4)-2);
-        ctx.lineTo((Math.random()*4)-2, (Math.random()*4)-2);
-        ctx.lineTo((Math.random()*4)-2, (Math.random()*4)-2);
-        ctx.lineTo((Math.random()*4)-2, (Math.random()*4)-2);
-        ctx.lineTo((Math.random()*4)-2, (Math.random()*4)-2);
+        ctx.moveTo((Math.random()+1), (Math.random()+1));
+        ctx.lineTo((Math.random()+1), (Math.random()+1));
+        ctx.lineTo((Math.random()+1), (Math.random()+1));
+        ctx.lineTo((Math.random()*+1), (Math.random()-2));
+        ctx.lineTo((Math.random()+1), (Math.random()-2));
+        ctx.lineTo((Math.random()-2), (Math.random()-2));
+        ctx.lineTo((Math.random()-2), (Math.random()-2));
+        ctx.lineTo((Math.random()-2), (Math.random()+1));
+        ctx.lineTo((Math.random()-2), (Math.random()+1));
         ctx.fill();
       }
       ctx.restore();
