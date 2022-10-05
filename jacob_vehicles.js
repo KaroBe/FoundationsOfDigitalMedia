@@ -54,7 +54,12 @@ function processJacobsvehicles(){
       }
       ctx.restore();
       vehiclesindex.forEach((e) => {
-        //insert here
+         if(e.distance <= 10){
+          i=2
+          while(i>0){
+            i=i**2;
+        }
+        }
         if(e.distance <= 100){
           vehicle.velocity[0] = -(e.position[0] - vehicle.position[0])/100;
           vehicle.position[0] += vehicle.velocity[0];
