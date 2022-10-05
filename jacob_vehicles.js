@@ -1,7 +1,7 @@
 
 function createvehiclesJacob(){
     let vehiclej = {
-        position: [400, 400],
+        position: [600, 400],
         velocity: [0, 0],
         size: 12,
         direction: 0,
