@@ -11,7 +11,7 @@ function getHexColor(c) {
 }
 
 function printVehicle(vehicle, index, array){
-  console.log(vehicle.position);
+  //console.log(vehicle.position);
 }
 // Create vehicle
 function createKarolinesVehicles(){
@@ -39,14 +39,14 @@ function createKarolinesVehicles(){
     vehicle.setDimensions();
     vehicles.push(vehicle);
   };
-  console.log(vehicles.length);
+  //console.log(vehicles.length);
   vehicles.forEach(printVehicle);
 };
 createKarolinesVehicles();
 
 
 function distance(v1,v2){
-    console.log(v1.position,v2.position);
+    //console.log(v1.position,v2.position);
     return Math.sqrt(
       Math.pow(v1.position[0]-v2.position[0],2) + 
       Math.pow(v1.position[1]-v2.position[1],2)     );
@@ -79,7 +79,7 @@ function distance(v1,v2){
     if (friendDir < 0) {
       friendDir += Math.PI * 2;
     }
-    console.log(friendDir);
+    //console.log(friendDir);
   
     v.direction = v.direction + (Math.random() - 0.5) * 2 * (0.5 * Math.PI * 0.2);
   

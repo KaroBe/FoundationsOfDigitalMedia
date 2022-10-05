@@ -25,8 +25,9 @@ function animate(){
 
     // Call your process...Vehicles function here
     processKarolinesVehicles();
-    processJacobsvehicles()
-    processCindysvehicles()
+    processJacobsvehicles();
+    processCindysvehicles();
+    processDonsvehicles();
 
     // Initiate next frame
     window.requestAnimationFrame(animate);
