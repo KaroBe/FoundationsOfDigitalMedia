@@ -19,14 +19,11 @@ function createvehiclesCindy() {
     for (let vehicle of vehicles) {
         if (vehicle.owner == "Cindy") {
             let positions = vehicles.filter(function(not) {return not.owner !== "Cindy"})
-            let vcentTosensdist = Math.sqrt(1.5 * 1.5 + 1.5 * 1.5);
-            let vcentTosensangle = Math.PI / 4;
+            //let vcentTosensdist = Math.sqrt(1.5 * 1.5 + 1.5 * 1.5);
+            //let vcentTosensangle = Math.PI / 4;
             //borrowed & modified code from https://codepen.io/donwalsin/pen/rNvWqKR
             for (i = 0; i < positions.length; i++) {
-                positions[i].distance = positions[i].position[1] - vehicle.position[1] * vcentTosensdist *
-                  Math.cos(vcentTosensangle),
-                  positions[i].position[0] - vehicle.position[0] + vcentTosensdist *
-                  Math.sin(vcentTosensangle)
+              positions[i].distance = (Math.sqrt((Math.abs(positions[i].position[0] - vehicle.position[0])**2)+(Math.abs(positions[i].position[1] - vehicle.position[1])**2)));
         }
 
         if (vehicle.position[1] <= 0) {
