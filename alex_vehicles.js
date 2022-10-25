@@ -23,7 +23,7 @@ let AlexTarget = {
   size: 20
 };
 
-function processAlexVehicle() {
+function processAlexVehicles() {
   for (let vehicle of vehicles) {
     if (vehicle.owner == "Alex") {
       // draw vehicle
