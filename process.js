@@ -25,6 +25,7 @@ function animate(){
 
     // Call your process...Vehicles function here
     processKarolinesVehicles();
+    processLudisVehicles();
     processJacobsvehicles();
     processCindysvehicles();
     processDonsvehicles();
