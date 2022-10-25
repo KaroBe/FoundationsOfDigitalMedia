@@ -21,7 +21,7 @@ function createvehiclesDon() {
         vehicles.push(vehicle);
     }
 }
-createvehiclesDon();
+//createvehiclesDon();
 
 function processDonsvehicles() {
     for (let vehicle of vehicles) {
