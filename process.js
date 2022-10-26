@@ -27,7 +27,7 @@ function animate(){
     processKarolinesVehicles();
 	processAlexVehicles();
     processLudisVehicles();
-    //processJacobsvehicles();
+    processJacobsvehicles();
     processCindysvehicles();
     //processDonsvehicles();
 
