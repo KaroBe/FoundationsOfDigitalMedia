@@ -9,7 +9,7 @@ function createVehicleAlex() {
       speed: 0,
       shape: 0,
       owner: "Alex",
-      colour: "Red",
+      colour: "Black",
       history: []
     };
    vehicles.push(vehicle);
@@ -89,26 +89,20 @@ function processAlexVehicles() {
     // update position
     vehicle.position[0] += vehicle.velocity[0];
     vehicle.position[1] += vehicle.velocity[1];
+	
+	/*
+		AlexTarget.position[0] = x1;
+		AlexTarget.position[1] = y1;
+	*/
+	
  //
         ctx.translate(vehicle.position[0], vehicle.position[1]);
         ctx.rotate(vehicle.direction);
         ctx.scale(vehicle.size, vehicle.size);
-        ctx.fillStyle = "Red";
+        ctx.fillStyle = "Black";
         ctx.fillRect(-0.5, -0.5, 1, 1);
       }
       ctx.restore();
     }
   }
 }
-
-canvas.onpointermove = function (event) {
-  
-  // REPLACE THIS POSITION WITH ANOTHER MACHINE
-  
-  let x1 = event.clientX;
-  let y1 = event.clientY;
-
-  AlexTarget.position[0] = x1;
-  AlexTarget.position[1] = y1;
-  
-  };
