@@ -30,6 +30,12 @@ function processAlexVehicles() {
       ctx.save();
       {
  
+	for (let other_vehicle of vehicles) {
+            if (vehicle.id != other_vehicle.id) {
+                AlexTarget.position = other_vehicle.position;
+            }
+        }
+	
  // modified version of this codepen https://codepen.io/donwalsin/pen/rNvWqKR
  
     let vcentTosensdist = Math.sqrt(1.5 * 1.5 + 1.5 * 1.5);
@@ -89,11 +95,6 @@ function processAlexVehicles() {
     // update position
     vehicle.position[0] += vehicle.velocity[0];
     vehicle.position[1] += vehicle.velocity[1];
-	
-	/*
-		AlexTarget.position[0] = x1;
-		AlexTarget.position[1] = y1;
-	*/
 	
  //
         ctx.translate(vehicle.position[0], vehicle.position[1]);
