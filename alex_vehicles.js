@@ -29,12 +29,24 @@ function processAlexVehicles() {
       // draw vehicle
       ctx.save();
       {
- 
-	for (let other_vehicle of vehicles) {
+		  
+	function claimVehicle() {
+		for (let other_vehicle of vehicles) {
             if (vehicle.id != other_vehicle.id) {
                 AlexTarget.position = other_vehicle.position;
+				var collided = false;
+				collided = collide(vehicle, other_vehicle) || collided;
+				if (collided) {
+					other_vehicle.owner = "Alex";
+					collided = true;
+				} else {
+					return;
+				}
             }
         }
+	}
+	
+	claimVehicle();
 	
  // modified version of this codepen https://codepen.io/donwalsin/pen/rNvWqKR
  
@@ -105,5 +117,13 @@ function processAlexVehicles() {
       }
       ctx.restore();
     }
+  }
+  
+function collide(vehicle, other_vehicle) {
+    var vehiclePos = vehicle.position;
+    var otherVehiclePos = other_vehicle.position; 
+    var x_collision = (Math.abs(vehiclePos[0] - otherVehiclePos[0]) <= vehicle.size);
+    var y_collision = (Math.abs(vehiclePos[1] - otherVehiclePos[1]) <= vehicle.size);
+    return x_collision && y_collision;
   }
 }
