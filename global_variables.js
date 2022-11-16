@@ -3,6 +3,7 @@
 const canvas = document.getElementById("mycanvas");
 const canvasParent = document.getElementById("content");
 const ctx = canvas.getContext("2d");
+var bees = document.getElementById("bees");
 
 let vehicles = [];
 
