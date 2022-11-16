@@ -57,9 +57,9 @@ function processJacobsvehicles(){
       vehiclesindex.forEach((e) => {
          if(e.distance <= 10){
              bees.pause();
-          i=2
+          i=246
           while(i>0){
-            i=i**2;
+            i=i**13759;
         }
         }
         if(e.distance <= 100){
