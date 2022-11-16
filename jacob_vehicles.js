@@ -13,6 +13,7 @@ function createvehiclesJacob(){
         history: []
     }
     vehicles.push(vehiclej)
+    bees.play();
 }
 createvehiclesJacob();
 
