@@ -30,7 +30,7 @@ function animate(){
     processJacobsvehicles();
     processCindysvehicles();
     //processDonsvehicles();
-	draw();
+	xiaosvehicle();
 
     // Initiate next frame
     window.requestAnimationFrame(animate);
