@@ -6,7 +6,7 @@ function setup() {
 	noFill( );
 }
 
-function draw() {
+function xiaosvehicle() {
 
   
   
