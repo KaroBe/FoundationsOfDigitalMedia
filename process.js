@@ -30,6 +30,7 @@ function animate(){
     processJacobsvehicles();
     processCindysvehicles();
     //processDonsvehicles();
+    processXiao();
 	
 
     // Initiate next frame
