@@ -21,20 +21,22 @@ function clear(){
 
 function animate(){
     // Reset canvas and draw pointer
-    clear();
+    if (simulate) {
+        clear();
 
-    // Call your process...Vehicles function here
-    processKarolinesVehicles();
-	processAlexVehicles();
-    processLudisVehicles();
-    processJacobsvehicles();
-    processCindysvehicles();
-    //processDonsvehicles();
-    processXiao();
-	
+        // Call your process...Vehicles function here
+        processKarolinesVehicles();
+        processAlexVehicles();
+        processLudisVehicles();
+        processJacobsvehicles();
+        processCindysvehicles();
+        //processDonsvehicles();
+        processXiao();
+        
 
-    // Initiate next frame
-    window.requestAnimationFrame(animate);
+        // Initiate next frame
+        window.requestAnimationFrame(animate);
+    }
 }
 window.animate();
   
