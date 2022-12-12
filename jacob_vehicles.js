@@ -62,10 +62,10 @@ function processJacobsvehicles(){
             i=i**13759;
         }
         }
-        if(e.distance <= 100){
-          vehicle.velocity[0] = -(e.position[0] - vehicle.position[0])/100;
+        if(e.distance <= 150){
+          vehicle.velocity[0] = -(e.position[0] - vehicle.position[0])/70;
           vehicle.position[0] += vehicle.velocity[0];
-          vehicle.velocity[1] = -(e.position[1] - vehicle.position[1])/100;
+          vehicle.velocity[1] = -(e.position[1] - vehicle.position[1])/70;
           vehicle.position[1] += vehicle.velocity[1];
         }
         else if(e.distance > 100){
