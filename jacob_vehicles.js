@@ -1,3 +1,11 @@
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function reload() { 
+  await sleep(3000);
+  window.location.reload(true);
+}
 
 function createvehiclesJacob(){
     let vehiclej = {
@@ -56,11 +64,9 @@ function processJacobsvehicles(){
       ctx.restore();
       vehiclesindex.forEach((e) => {
          if(e.distance <= 10){
-             bees.pause();
-          i=246
-          while(i>0){
-            i=i**13759;
-        }
+            bees.pause();
+            simulate = false;
+            reload(3000);
         }
         if(e.distance <= 150){
           vehicle.velocity[0] = -(e.position[0] - vehicle.position[0])/70;
